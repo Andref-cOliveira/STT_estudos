@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+% \usepackage{subfiles}
+\usepackage{tikz}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[section]{placeins}
+\usepackage[lofdepth,lotdepth]{subfig}
+\usepackage{listings}
+\usepackage{hyperref}
+\usetikzlibrary{arrows,positioning,mindmap,shapes.geometric,decorations.text, decorations.pathmorphing,calc,matrix}
+\usetikzlibrary{arrows.meta,chains,decorations.pathreplacing}
+
+\tikzset{% Specifications for style of nodes:
+            base/.style = {rectangle, rounded corners, draw=black,
+                           minimum width=4cm, minimum height=1cm,
+                           text centered, font=\sffamily},
+            old/.style  =  {base, fill=blue!10},
+            new/.style  =  {base, fill=green!15},
+            treenode/.style = { inner sep=0pt,
+    font=\sffamily},
+  arn_n/.style = {treenode, circle,  font=\sffamily\bfseries, draw=black},% arbre rouge noir, noeud noir
+  arn_r/.style = {treenode, circle, red, draw=red,
+    text width=0.5em, very thick},% arbre rouge noir, noeud rouge
+  arn_x/.style = {treenode, rectangle, draw=black,
+    minimum width=0.16em, minimum height=0.16em}% arbre rouge noir, nil
+}
+\usepackage{smartdiagram}
+\usepackage{pgfplots}
+\usepackage{placeins}
+\usepackage{draftwatermark}
+\SetWatermarkText{Confidencial}
+\SetWatermarkScale{4}
+% \SetWatermarkColor[rgb]{0.4,0,0}
+
+\renewcommand{\baselinestretch}{0.9}
+\setlength{\headheight}{0cm}
+\setlength{\headsep}{0cm}
+\setlength{\topmargin}{-1.5cm} % {-2.5cm}
+\setlength{\topskip}{0cm}
+\setlength{\textheight}{26.5cm} %{26.5}
+\setlength{\textwidth}{18.2cm}
+\setlength{\marginparsep}{0cm}
+\setlength{\marginparwidth}{0cm}
+\setlength{\oddsidemargin}{-1.54cm}
+\setlength{\evensidemargin}{-1.54cm}
+\setlength{\columnsep}{0.85cm}
+\author{}
+
+\begin{document}
+
+\begin{titlepage}
+
+	\title{
+    \vspace{8cm}
+		\textbf{Aprofundar no estudo das arquiteturas STT existentes nos GITs} \\
+		\vspace{0.2in}
+		%\normalsize  Análise do artigo e de implementações abertas}\\
+		\vspace*{0.8in}
+		\hspace*{0.5in}
+    \includegraphics[width=0.2\linewidth]{../../modelos/logo.jpg}
+		\hspace*{0.5in}
+    \includegraphics[width=0.2\linewidth]{../../modelos/logoufmg.png}
+		\hspace*{0.5in}
+    \includegraphics[width=0.2\linewidth]{../../modelos/logoomni.jpg}\\
+	}
+\end{titlepage}
+
+\date{}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\section{Introdução}
+
+
+\newpage
+\bibliographystyle{apalike}
+\bibliography{ref}
+
+\end{document}
